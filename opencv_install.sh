@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-OPENCV_VERSION="3.1.0"
+OPENCV_VERSION="3.0.0"
 
 OPENCV_URL="https://github.com/Itseez/opencv/archive/${OPENCV_VERSION}.zip"
 OPENCV_PACKAGE_NAME="opencv-${OPENCV_VERSION}"
@@ -51,7 +51,7 @@ setup_virtualenv() {
     source /usr/local/bin/virtualenvwrapper.sh
     mkvirtualenv -p python3 cv
     workon cv
-    install_local_python_dependences
+
 }
 
 build() {
